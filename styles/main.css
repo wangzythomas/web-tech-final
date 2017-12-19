@@ -82,10 +82,15 @@ ul.dropdown-menu > li > a {
     padding-top: 90px;
     margin-top: -90px;
 }
+.article-subtitle {
+    color: #c22b33;
+    font-size: 25px;
+}
 
 blockquote > span {
     display: inline-block;
     margin-left: 20px;
+    font-weight: bold;
 }
 
 .quotation {
@@ -129,13 +134,16 @@ blockquote > span {
     padding-bottom: 10px;
     padding-left: 15px;
     font-size: 25px;
+    color: #555555;
 }
 
 .side-bar-item {
     padding-top: 7.5px;
     padding-bottom: 7.5px;
     font-size: 18px;
+    padding-left: 7.5px;
 }
+
 .side-bar-item:hover {
     background-color: #e7e7e7;
 }
