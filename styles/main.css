@@ -1,0 +1,182 @@
+
+* {
+    font-family: sans-serif;
+}
+
+/* Navigation bar */
+.navbar-brand {
+    background-image: url(../images/navBrand.png);
+    width: 130px;
+    height: 62px;
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: 2px;
+}
+
+.navbar-fixed-top {
+    height: 70px;
+}
+
+ul.navbar-right {
+    padding-top: 11px;
+}
+
+ul.navbar-right li {
+    padding-left: 10px;
+    font-weight:300;
+}
+
+.greetings {
+    padding-top: 11px;
+    padding-left: 50px;
+    color: brown;
+}
+
+div.for-carousel {
+    padding-top: 90px;
+}
+
+.img-caption {
+    font-family: sans-serif;
+    font-size: 50px;
+    font-weight: 200;
+}
+
+#scroll-down {
+    font-size: 15vmin;
+    color: rgba(200,200,200,0.8);
+    filter: blur(1px);
+}
+
+#scroll-down:hover, #scroll-down:focus, #scroll-down:active {
+    transform: scale(1.1);
+}
+
+.arrow-down {
+    height: 14.5vmin;
+}
+
+#project {
+    padding-top: 70px;
+    margin-top: -70px;
+}
+
+#back-to-top {
+    border-color: #a52a2a;
+    color: #a52a2a;
+    margin-top: 5vmin;
+    margin-bottom: 10vmin;
+}
+
+ul.dropdown-menu > li > a {
+    color: #777;
+    font-family: sans-serif;
+    font-size: 18px;
+    font-weight: 300;
+
+}
+
+.article-title {
+    line-height: 1.5;
+    font-weight: bold;
+    padding-top: 90px;
+    margin-top: -90px;
+}
+
+blockquote > span {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+.quotation {
+    font-style: italic;
+}
+
+.article-content {
+    display: block;
+    padding-bottom: 10px;
+    text-align: justify;
+    font-size: 16px;
+    line-height: 1.5;
+}
+
+/*To make Youtube ifram responsive*/
+.video-responsive {
+    position: relative;
+    width: 100%;
+    padding-bottom: 56.25%;
+    background-color: #777;
+}
+
+.video-responsive iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+
+.side-bar {
+    position: relative;
+    background-color: #f8f8f8;
+    margin-top: 50px;
+    border-radius: 5px;
+    border-color: #e7e7e7;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.side-bar-title {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    font-size: 25px;
+}
+
+.side-bar-item {
+    padding-top: 7.5px;
+    padding-bottom: 7.5px;
+    font-size: 18px;
+}
+.side-bar-item:hover {
+    background-color: #e7e7e7;
+}
+
+.side-bar-item:last-child {
+    padding-bottom: 25px;
+}
+
+.street-view {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    padding-bottom: 100%;
+    margin-top: 50px;
+}
+
+.street-view iframe {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+}
+.ubi-logo {
+    margin-top: 50px;
+    padding-left: 50px;
+    padding-right: 50px;
+    margin-bottom: 50px;
+}
+
+/*#drop-down-menu {*/
+    /*box-sizing: border-box;*/
+    /*color: rgb(51,51,51);*/
+    /*display: block;*/
+    /*float: left;*/
+    /*font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;*/
+    /*font-size: 21px;*/
+    /*font-weight: 300;*/
+    /*line-height: 29.4px;*/
+    /*list-style-image: none;*/
+    /*list-style-position: outside;*/
+    /*list-style-type: none;*/
+    /*padding-left: 10px;*/
+    /*position: relative;*/
+    /*text-align: left;*/
+/*}*/
