@@ -3,11 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--TO DO: meta name="keywords" content=""-->
+    <meta name="keywords" content="Assassin's Creed,Cultural Heritage,Paris,London,Florence,Cairo">
     <!--TO DO: meta name="description" content=""-->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Cultural Heritage in Assassin's Creed Series</title>
+    <title>Paris: Assassin's Creed Unity Review</title>
 </head>
 <body data-spy="scroll">
     <!--navigation bar-->
@@ -21,7 +21,10 @@
                 <p class="greetings lead">Welcome, Guest!</p>
             </div>
             <!--navigation buttons-->
-            <div id="navbar-scrollspy" class="collapse navbar-collapse">
+            <!--menu button shows when collapsed-->
+            <label class="toggle-label visible-sm visible-xs" for="toggle-menu"><span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span></label>
+            <input class="toggle-menu hidden" onchange="showHide(this.checked)" id="toggle-menu" type="checkbox">
+            <div id="navbar-scrollspy" class="hidden-sm hidden-xs">
                 <ul class="nav navbar-nav navbar-right lead">
                     <li><a href="index.html">HOME</a></li>
                     <!--<li><a href="javascript:void(0)" onlick=locateAt('project')>PROJECT</a></li>-->
@@ -38,13 +41,12 @@
                             <li><a href="article4.html">Cairo</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
-    <div class="container" style="padding-top: 90px;">
+    <div class="container" id="to-be-hidden" style="padding-top: 90px;">
         <div class="row"> <!--reduce horizontal margin by 15px-->
             <!--main part on the left-->
             <div class="col-md-8">
@@ -78,42 +80,58 @@
                     When it all worked perfectly, guiding my Arno up, down, and across the Parisian skyline brought me a great sense of satisfaction. The key phrase there was “when it all worked,” because the series-long frustration of your assassin not doing quite what you want him to do is still present here. I found myself quickly losing momentum and clumsily hopping about whenever I tried to enter a window and explore any of Unity’s huge array of interior spaces. It was also particularly frustrating in stealth sections, which Unity emphasizes heavily. Navigating between pieces of cover is finicky, and it was never clear whether or not I was even hidden.
                 </p>
             </div>
-
             <!--secondary part on the right-->
             <div class="col-md-4">
+                <!--search-->
+                <div class="search input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
                 <!--side bar-->
                 <div class="side-bar">
                     <div class="side-bar-title">You May Also Like...</div>
                     <div class="side-bar-item clearfix">
-                        <div class="col-xs-6">
-                            <a href="article1.html" target="_blank"><img src="images/article1.jpg" class="img-responsive" alt="notre dame de paris"></a>
+                        <div class="col-xs-5">
+                            <a href="article4.html" target="_blank"><img src="images/sideBarCairo.jpg" class="img-responsive" alt="assassin's creed origins pharaoh"></a>
                         </div>
-                        <div class="col-xs-6">
-                            <a href="article1.html" target="_blank" style="color: #777777;">Paris: The City of Eternity</a>
+                        <div class="col-xs-7">
+                            <a href="article4.html" target="_blank" style="color: #777777;">Reveal deepest mysteries of the Pharaohs</a>
                         </div>
                     </div>
                     <div class="side-bar-item clearfix">
-                        <div class="col-xs-6">
+                        <div class="col-xs-5">
                             <a href="article2.html" target="_blank"><img src="images/sideBarLondon.jpg" class="img-responsive" alt="london in victorian times bovril vinolia"></a>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-7">
                             <a href="article2.html" target="_blank" style="color: #777777;">Discover London in Victorian Times</a>
                         </div>
                     </div>
                     <div class="side-bar-item clearfix">
-                        <div class="col-xs-6">
+                        <div class="col-xs-5">
                             <a href="article3.html" target="_blank"><img src="images/sideBarFlorence.jpg" class="img-responsive" alt="florence Ponte Vecchio"></a>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-7">
                             <a href="article3.html" target="_blank" style="color: #777777;">Florence, The Gallery of Renaissance</a>
                         </div>
                     </div>
                     <div class="side-bar-item clearfix">
-                        <div class="col-xs-6">
+                        <div class="col-xs-5">
                             <a href="index.html#project" target="_blank"><img src="images/sideBarBottom.jpg" class="img-responsive" alt="assassin's creed project"></a>
                         </div>
-                        <div class="col-xs-6">
+                        <div class="col-xs-7">
                             <a href="index.html#project" target="_blank" style="color: #777777;">Assassin's Creed project overview</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="about.html" target="_blank"><img src="images/sideBarAbout.jpg" class="img-responsive" alt="assassin's creed about us"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="about.html" target="_blank" style="color: #777777;">About Us...</a>
                         </div>
                     </div>
                 </div>
@@ -123,22 +141,17 @@
                 </div>
                 <!--ubisoft-->
                 <div class="ubi-logo">
-                    <a href="https://www.ubisoft.com/en-US/"><img class="img-responsive" src="images/ubisoft.png"></a>
+                    <a href="https://www.ubisoft.com/en-US/" target="_blank"><img class="img-responsive" src="images/ubisoft.png"></a>
                 </div>
-
             </div>
         </div>
+        <!--bact to top button-->
+        <div class="container text-center">
+            <a href="#main"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
+        </div>
     </div>
-
-
-    <!--bact to top button-->
-    <div class="container text-center">
-        <a href="#main"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
-    </div>
-
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
-    <script src="scripts/theia-sticky-sidebar.js"></script>
     <script src="scripts/main.js"></script>
 </body>
 </html>

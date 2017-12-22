@@ -3,141 +3,155 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--TO DO: meta name="keywords" content=""-->
+    <meta name="keywords" content="Assassin's Creed,Cultural Heritage,Paris,London,Florence,Cairo">
     <!--TO DO: meta name="description" content=""-->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Cultural Heritage in Assassin's Creed Series</title>
+    <title>Cairo: Assassin's Creed Origins Review</title>
 </head>
 <body data-spy="scroll">
-<!--navigation bar-->
-<div class="navbar navbar-fixed-top navbar-default" role="navigation">
-    <div class="container" id="navbar-container">
-        <!--brand logo-->
-        <div class="navbar-header">
-            <a href="index.html" class="navbar-brand"></a>
-        </div>
-        <div class="collapse navbar-collapse navbar-text clearfix">
-            <p class="greetings lead">Welcome, Guest!</p>
-        </div>
-        <!--navigation buttons-->
-        <div id="navbar-scrollspy" class="collapse navbar-collapse">
-            <ul class="nav navbar-nav navbar-right lead">
-                <li><a href="index.html">HOME</a></li>
-                <!--<li><a href="javascript:void(0)" onlick=locateAt('project')>PROJECT</a></li>-->
-                <li><a href="index.html#project">PROJECT</a></li>
-                <!--dropdown menu-->
-                <li role="presentation" class="dropdown active">
-                    <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop-down-menu" aria-haspopup="true" aria-expanded="false" role="button">
-                        CITIES<span class="caret"></span>
-                    </a>
-                    <ul class="dropdown-menu" aria-labelledby="drop-down-menu">
-                        <li><a href="article1.html">Paris</a></li>
-                        <li><a href="article2.html">London</a></li>
-                        <li><a href="article3.html">Florence</a></li>
-                        <li><a href="article4.html">Cairo</a></li>
-                    </ul>
-                </li>
-                <li><a href="#">ABOUT</a></li>
-            </ul>
+    <!--navigation bar-->
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container" id="navbar-container">
+            <!--brand logo-->
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-text clearfix">
+                <p class="greetings lead">Welcome, Guest!</p>
+            </div>
+            <!--navigation buttons-->
+            <!--menu button shows when collapsed-->
+            <label class="toggle-label visible-sm visible-xs" for="toggle-menu"><span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span></label>
+            <input class="toggle-menu hidden" onchange="showHide(this.checked)" id="toggle-menu" type="checkbox">
+            <div id="navbar-scrollspy" class="hidden-sm hidden-xs">
+                <ul class="nav navbar-nav navbar-right lead">
+                    <li><a href="index.html">HOME</a></li>
+                    <!--<li><a href="javascript:void(0)" onlick=locateAt('project')>PROJECT</a></li>-->
+                    <li><a href="index.html#project">PROJECT</a></li>
+                    <!--dropdown menu-->
+                    <li role="presentation" class="dropdown active">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop-down-menu" aria-haspopup="true" aria-expanded="false" role="button">
+                            CITIES<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="drop-down-menu">
+                            <li><a href="article1.html">Paris</a></li>
+                            <li><a href="article2.html">London</a></li>
+                            <li><a href="article3.html">Florence</a></li>
+                            <li><a href="article4.html">Cairo</a></li>
+                        </ul>
+                    </li>
+                    <li><a href="about.html">ABOUT</a></li>
+                </ul>
+            </div>
         </div>
     </div>
-</div>
 
-<div class="container" style="padding-top: 90px;">
-    <div class="row"> <!--reduce horizontal margin by 15px-->
-        <!--main part on the left-->
-        <div class="col-md-8">
-            <h1 id="main" class="article-title">Reveal the Most Ancient Mysteries: Assassin's Creed Origins Review</h1>
-            <blockquote class="quotation">
-                We cannot fathom technology that is unknown to us, and we seldom consider things that seem impossible to us.<br><span>― Christopher Dunn, The Giza Power Plant: Technologies of Ancient Egypt</span>
-            </blockquote>
-            <img src="images/article4.jpg" class="img-responsive" alt="assassin's creed origins pyramid">
-            <p class="article-content" style="padding-top: 20px">
-                <small>BY</small> <a href="http://uk.ign.com/articles/2017/10/26/assassins-creed-origins-review" target="_blank" style="font-weight:bold; color: #c83e43;">ALANAH PEARCE</a> <span class="glyphicon glyphicon-arrow-right"></span> Assassin’s Creed Origins is a dark, multifaceted, deep dive into one of the series’ most alluring settings yet: ancient Egypt. As Bayek of Siwa, who is simultaneously compassionate, bold, and driven by revenge, you’re strung through a twisted story of pharaohs and corrupt leaders, of love gained and lost, and the plights of the lower class in a time when they were routinely worked to death and nobody batted an eye. It’s a tense journey that challenges your concepts of right and wrong, making you consider the morality of those you kill in the process – and, in a dramatic shift for the series, it’s all part of a full-on roleplaying game.
-            </p>
-            <p class="article-content">
-                I spent 30 hours finishing the main campaign, which took me through just over half of the expansive and beautiful map that recreates ancient Egypt’s varied architecture and environments. It’s filled with areas of soft sand that are swept by dynamic sandstorms, ranges of treacherous and rocky mountains, catacombs of towering ancient structures built in the names of the gods, and the decaying shacks of the common people. Refreshingly, I discovered all of these things through an organic drive to explore, rather than through the series’ traditional structure of climbing to viewpoints to have them unveiled for you. There are plenty more secrets to uncover, and the delightful sense of discovery still hasn’t left me.
-            </p>
-            <!--video clip-->
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/WOiXceTSso8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <div class="container" id="to-be-hidden" style="padding-top: 90px;">
+        <div class="row"> <!--reduce horizontal margin by 15px-->
+            <!--main part on the left-->
+            <div class="col-md-8">
+                <h1 id="main" class="article-title">Reveal the Most Ancient Mysteries: Assassin's Creed Origins Review</h1>
+                <blockquote class="quotation">
+                    We cannot fathom technology that is unknown to us, and we seldom consider things that seem impossible to us.<br><span>― Christopher Dunn, The Giza Power Plant: Technologies of Ancient Egypt</span>
+                </blockquote>
+                <img src="images/article4.jpg" class="img-responsive" alt="assassin's creed origins pyramid">
+                <p class="article-content" style="padding-top: 20px">
+                    <small>BY</small> <a href="http://uk.ign.com/articles/2017/10/26/assassins-creed-origins-review" target="_blank" style="font-weight:bold; color: #c83e43;">ALANAH PEARCE</a> <span class="glyphicon glyphicon-arrow-right"></span> Assassin’s Creed Origins is a dark, multifaceted, deep dive into one of the series’ most alluring settings yet: ancient Egypt. As Bayek of Siwa, who is simultaneously compassionate, bold, and driven by revenge, you’re strung through a twisted story of pharaohs and corrupt leaders, of love gained and lost, and the plights of the lower class in a time when they were routinely worked to death and nobody batted an eye. It’s a tense journey that challenges your concepts of right and wrong, making you consider the morality of those you kill in the process – and, in a dramatic shift for the series, it’s all part of a full-on roleplaying game.
+                </p>
+                <p class="article-content">
+                    I spent 30 hours finishing the main campaign, which took me through just over half of the expansive and beautiful map that recreates ancient Egypt’s varied architecture and environments. It’s filled with areas of soft sand that are swept by dynamic sandstorms, ranges of treacherous and rocky mountains, catacombs of towering ancient structures built in the names of the gods, and the decaying shacks of the common people. Refreshingly, I discovered all of these things through an organic drive to explore, rather than through the series’ traditional structure of climbing to viewpoints to have them unveiled for you. There are plenty more secrets to uncover, and the delightful sense of discovery still hasn’t left me.
+                </p>
+                <!--video clip-->
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/WOiXceTSso8" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p class="article-content" style="padding-top: 20px">
+                    This is also the biggest and most connected map we’ve seen in an Assassin's Creed game. Even the seemingly-empty desert regions having their own treats, like the breathtaking view from the highest elevation point, with an impressive draw distance, whether you’re playing on Xbox One X or PlayStation 4. There are multiple cities, too, each with their own unique culture featuring different gods, politics, race relations, and prejudices to uncover. They’re distinct in architecture and environment, and that makes the significant time commitment one that’s consistently varied and surprising.
+                </p>
+                <p class="article-content">
+                    The density of it is made more impressive by being able to explore it in its entirety without any loading screens, with the exception of some story cutscenes, and if you choose to fast travel. If you want to get around quickly, a smart in-universe transit system lets you call your mount and press a button to follow the main road, or to head to a custom marker you’ve placed on the map – all fully automated, letting you take in the scenery around you.
+                </p>
+                <img src="images/article41.jpg" class="img-responsive" alt="sphinx pyramid egypt assassin's creed origins">
+                <p class="article-content" style="padding-top: 20px">
+                    Thankfully, Origins does away with previous games’ auto-fail stealth missions and its heavy-handed suggestions for how you should approach certain objectives. Instead, it finally gives you absolute, almost Hitman-level freedom to approach a target however you’d like, and your choice of abilities can unlock new solutions. For example, as soon as I gained the ability to befriend animals, it changed the way I approached any mission locations where they were in the area. I’d survey the area with Bayek’s bird companion, Senu, then stealthily take out the guards at the front of a camp with a predator bow, sneak through to a caged lion, befriend it, and release it. That’s generally more than enough of a distraction to get past the remaining guards and break out the hostage I was sent to free from another cage, then slip out totally unseen.
+                </p>
+                <p class="article-content">
+                    While unlocking new abilities and story missions generally happens at a smooth pace, there is quite a lot of ‘grinding’ to be done in Origins. This happened to me when the recommended level for a new main quest mission appeared as several levels above where I was when I first unlocked it – a difference that can render enemies all but unkillable. That’s usually no big deal, since Origins is flush with side activities that can help you make up the difference, but on two separate occasions, I couldn’t find any side quests at my level. That meant I had to go for much lower-level quests for small rewards, which stretched out the process uncomfortably. If you do urgently want to get to the next story event – as I did at one point towards the very end of the story – this stymied progress can be a little frustrating.
+                </p>
             </div>
-            <p class="article-content" style="padding-top: 20px">
-                This is also the biggest and most connected map we’ve seen in an Assassin's Creed game. Even the seemingly-empty desert regions having their own treats, like the breathtaking view from the highest elevation point, with an impressive draw distance, whether you’re playing on Xbox One X or PlayStation 4. There are multiple cities, too, each with their own unique culture featuring different gods, politics, race relations, and prejudices to uncover. They’re distinct in architecture and environment, and that makes the significant time commitment one that’s consistently varied and surprising.
-            </p>
-            <p class="article-content">
-                The density of it is made more impressive by being able to explore it in its entirety without any loading screens, with the exception of some story cutscenes, and if you choose to fast travel. If you want to get around quickly, a smart in-universe transit system lets you call your mount and press a button to follow the main road, or to head to a custom marker you’ve placed on the map – all fully automated, letting you take in the scenery around you.
-            </p>
-            <img src="images/article41.jpg" class="img-responsive" alt="sphinx pyramid egypt assassin's creed origins">
-            <p class="article-content" style="padding-top: 20px">
-                Thankfully, Origins does away with previous games’ auto-fail stealth missions and its heavy-handed suggestions for how you should approach certain objectives. Instead, it finally gives you absolute, almost Hitman-level freedom to approach a target however you’d like, and your choice of abilities can unlock new solutions. For example, as soon as I gained the ability to befriend animals, it changed the way I approached any mission locations where they were in the area. I’d survey the area with Bayek’s bird companion, Senu, then stealthily take out the guards at the front of a camp with a predator bow, sneak through to a caged lion, befriend it, and release it. That’s generally more than enough of a distraction to get past the remaining guards and break out the hostage I was sent to free from another cage, then slip out totally unseen.
-            </p>
-            <p class="article-content">
-                While unlocking new abilities and story missions generally happens at a smooth pace, there is quite a lot of ‘grinding’ to be done in Origins. This happened to me when the recommended level for a new main quest mission appeared as several levels above where I was when I first unlocked it – a difference that can render enemies all but unkillable. That’s usually no big deal, since Origins is flush with side activities that can help you make up the difference, but on two separate occasions, I couldn’t find any side quests at my level. That meant I had to go for much lower-level quests for small rewards, which stretched out the process uncomfortably. If you do urgently want to get to the next story event – as I did at one point towards the very end of the story – this stymied progress can be a little frustrating.
-            </p>
+            <!--secondary part on the right-->
+            <div class="col-md-4">
+                <!--search-->
+                <div class="search input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+                <!--side bar-->
+                <div class="side-bar">
+                    <div class="side-bar-title">You May Also Like...</div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="article3.html" target="_blank"><img src="images/sideBarFlorence.jpg" class="img-responsive" alt="florence Ponte Vecchio"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="article3.html" target="_blank" style="color: #777777;">Florence, The Gallery of Renaissance</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="article1.html" target="_blank"><img src="images/article1.jpg" class="img-responsive" alt="notre dame de paris"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="article1.html" target="_blank" style="color: #777777;">Paris: The City of Eternity</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="article2.html" target="_blank"><img src="images/sideBarLondon.jpg" class="img-responsive" alt="london in victorian times bovril vinolia"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="article2.html" target="_blank" style="color: #777777;">Discover London in Victorian Times</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="index.html#project" target="_blank"><img src="images/sideBarBottom.jpg" class="img-responsive" alt="assassin's creed project"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="index.html#project" target="_blank" style="color: #777777;">Assassin's Creed project overview</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="about.html" target="_blank"><img src="images/sideBarAbout.jpg" class="img-responsive" alt="assassin's creed about us"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="about.html" target="_blank" style="color: #777777;">About Us...</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Google street view-->
+                <div class="street-view">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1513709083903!6m8!1m7!1sCAoSLEFGMVFpcE5SaE51Sm15NFBDaTZaS2ZEbGo5aTRxUVBUZVFtSjNEOVFDOHZD!2m2!1d29.97729008554482!2d31.13576436418214!3f334.6414906887746!4f18.341433744122426!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <!--ubisoft-->
+                <div class="ubi-logo">
+                    <a href="https://www.ubisoft.com/en-US/" target="_blank"><img class="img-responsive" src="images/ubisoft.png"></a>
+                </div>
+            </div>
         </div>
-
-        <!--secondary part on the right-->
-        <div class="col-md-4">
-            <!--side bar-->
-            <div class="side-bar">
-                <div class="side-bar-title">You May Also Like...</div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="article1.html" target="_blank"><img src="images/article1.jpg" class="img-responsive" alt="notre dame de paris"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="article1.html" target="_blank" style="color: #777777;">Paris: The City of Eternity</a>
-                    </div>
-                </div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="article2.html" target="_blank"><img src="images/sideBarLondon.jpg" class="img-responsive" alt="london in victorian times bovril vinolia"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="article2.html" target="_blank" style="color: #777777;">Discover London in Victorian Times</a>
-                    </div>
-                </div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="article3.html" target="_blank"><img src="images/sideBarFlorence.jpg" class="img-responsive" alt="florence Ponte Vecchio"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="article3.html" target="_blank" style="color: #777777;">Florence, The Gallery of Renaissance</a>
-                    </div>
-                </div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="index.html#project" target="_blank"><img src="images/sideBarBottom.jpg" class="img-responsive" alt="assassin's creed project"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="index.html#project" target="_blank" style="color: #777777;">Assassin's Creed project overview</a>
-                    </div>
-                </div>
-            </div>
-            <!--Google street view-->
-            <div class="street-view">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1513709083903!6m8!1m7!1sCAoSLEFGMVFpcE5SaE51Sm15NFBDaTZaS2ZEbGo5aTRxUVBUZVFtSjNEOVFDOHZD!2m2!1d29.97729008554482!2d31.13576436418214!3f334.6414906887746!4f18.341433744122426!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <!--ubisoft-->
-            <div class="ubi-logo">
-                <a href="https://www.ubisoft.com/en-US/"><img class="img-responsive" src="images/ubisoft.png"></a>
-            </div>
-
+        <!--bact to top button-->
+        <div class="container text-center">
+            <a href="#main"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
         </div>
     </div>
-</div>
-
-
-<!--bact to top button-->
-<div class="container text-center">
-    <a href="#main"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
-</div>
-
-<script src="scripts/jquery-3.2.1.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/theia-sticky-sidebar.js"></script>
-<script src="scripts/main.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

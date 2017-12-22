@@ -3,8 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--TO DO: meta name="keywords" content=""-->
-    <!--TO DO: meta name="description" content=""-->
+    <meta name="keywords" content="Assassin's Creed,Cultural Heritage,Paris,London,Florence,Cairo">
+    <!--<TO DO:meta name="description" content="">-->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
     <title>Cultural Heritage in Assassin's Creed Series</title>
@@ -21,7 +21,10 @@
                 <p class="greetings lead">Welcome, Guest!</p>
             </div>
             <!--navigation buttons-->
-            <div id="navbar-scrollspy" class="collapse navbar-collapse">
+            <!--menu button shows when collapsed-->
+            <label class="toggle-label visible-sm visible-xs" for="toggle-menu"><span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span></label>
+            <input class="toggle-menu hidden" onchange="showHide(this.checked)" id="toggle-menu" type="checkbox">
+            <div id="navbar-scrollspy" class="hidden-sm hidden-xs">
                 <ul class="nav navbar-nav navbar-right lead">
                     <li><a href="#home">HOME</a></li>
                     <!--<li><a href="javascript:void(0)" onlick=locateAt('project')>PROJECT</a></li>-->
@@ -38,95 +41,101 @@
                             <li><a href="article4.html">Cairo</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </div>
         </div>
     </div>
     <!--banner carousel slides-->
-    <div class="container for-carousel" id="home" data-target="#navbar-scrollspy">
-        <div id="my-slider" class="row carousel slide" data-ride="carousel">
-            <!--dots indicator-->
-            <ol class="carousel-indicators">
-                <li data-target="#my-slider" data-slide-to="0" class="active"></li>
-                <li data-target="#my-slider" data-slide-to="1"></li>
-                <li data-target="#my-slider" data-slide-to="2"></li>
-            </ol>
-            <!--banner slides-->
-            <div class="carousel-inner" role="listbox">
-                <div class="item active">
-                    <img src="images/carousel1.jpg" alt="Assassin's Creed: Unity">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">Assassin's Creed: Unity</p>
+    <div id="to-be-hidden">
+        <div class="container for-carousel" id="home" data-target="#navbar-scrollspy">
+            <div id="my-slider" class="row carousel slide" data-ride="carousel">
+                <!--dots indicator-->
+                <ol class="carousel-indicators">
+                    <li data-target="#my-slider" data-slide-to="0" class="active"></li>
+                    <li data-target="#my-slider" data-slide-to="1"></li>
+                    <li data-target="#my-slider" data-slide-to="2"></li>
+                    <li data-target="#my-slider" data-slide-to="3"></li>
+                </ol>
+                <!--banner slides-->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active">
+                        <a href="article1.html"><img src="images/carousel1.jpg" alt="Assassin's Creed: Unity"></a>
+                        <div class="carousel-caption">
+                            <p class="img-caption collapse navbar-collapse">Assassin's Creed: Unity</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="article2.html"><img src="images/carousel2.jpg" alt="Assassin's Creed: Syndicate"></a>
+                        <div class="carousel-caption">
+                            <p class="img-caption collapse navbar-collapse">Assassin's Creed: Syndicate</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="article3.html"><img src="images/carousel4.jpg" alt="Assassin's Creed II"></a>
+                        <div class="carousel-caption">
+                            <p class="img-caption collapse navbar-collapse">Assassin's Creed II</p>
+                        </div>
+                    </div>
+                    <div class="item">
+                        <a href="article4.html"><img src="images/carousel3.jpg" alt="Assassin's Creed: Origins"></a>
+                        <div class="carousel-caption">
+                            <p class="img-caption collapse navbar-collapse">Assassin's Creed: Origins</p>
+                        </div>
                     </div>
                 </div>
-                <div class="item">
-                    <img src="images/carousel2.jpg" alt="Assassin's Creed: Syndicate">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">Assassin's Creed: Syndicate</p>
-                    </div>
-                </div>
-                <div class="item">
-                    <img src="images/carousel3.jpg" alt="Assassin's Creed: Origins">
-                    <div class="carousel-caption">
-                        <p class="img-caption collapse navbar-collapse">Assassin's Creed: Origins</p>
-                    </div>
-                </div>
+                <!--left and right buttons-->
+                <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                </a>
+                <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                </a>
             </div>
-            <!--left and right buttons-->
-            <a class="left carousel-control" href="#my-slider" role="button" data-slide="prev">
-                <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
-            </a>
-            <a class="right carousel-control" href="#my-slider" role="button" data-slide="next">
-                <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
-            </a>
         </div>
+        <!--arrow scroll downwards-->
+        <div class="container text-center arrow-down collapse navbar-collapse">
+            <a href="#project"><span id="scroll-down" class="glyphicon glyphicon-chevron-down"></span></a>
+        </div>
+        <!--project-->
+        <div class="container" id="project" data-target="#navbar-scrollspy" data-offset="0">
+            <h1>The Past Is Your Playground</h1>
+            <h2 style="font-style: italic"><small>How Ubisoft Assassin's Creed Series Recreate Cultural Heritages in the Virtual World</small></h2>
+            <div class="main-content">
+                <p class="article-content">
+                    <br>Assassin's Creed is a franchise centered on an action-adventure video game series developed by Ubisoft. It depicts a centuries-old struggle pitting the Assassins, who fight for peace and free will, against the Templars, who believe peace comes through control of humanity. The series features historical fiction mixed with real-world historical events and figures. The series took inspiration from the novel Alamut by the Slovenian writer Vladimir Bartol, while building upon concepts from the Prince of Persia series.
+                </p>
+                <p class="article-content">
+                    The franchise began in 2007 with the release of Assassin's Creed. The main video game series consists of ten entries, developed by Ubisoft Montreal (single-player) and Ubisoft Annecy (multiplayer), released on PlayStation 3, PlayStation 4, Xbox 360, Xbox One, Wii U, Microsoft Windows, and OS X platforms. Many spin-off games have been made for Nintendo DS, PlayStation Portable, PlayStation Vita, iOS, HP webOS, Android, Nokia Symbian and Windows Phone platforms. The handheld versions are developed by Gameloft and Gryptonite Studios, with additional development by Ubisoft Montreal.
+                </p>
+                <p class="article-content">
+                    The series has been well received by critics, and has sold over 100 million copies as of September 2016, becoming Ubisoft's best selling franchise and one of the highest selling video game franchises of all time. The video game series has been expanded into a film, comics and novels; all of which take place within the same continuity as the main video games series.
+                </p>
+                <div class="project-img">
+                    <img src="images/project2.jpg" class="img-responsive">
+                    <p>The Matrix-like virtual world</p>
+                </div>
+                <p class="article-content" style="padding-top: 20px">
+                    Within the franchise, Abstergo Industries is a mega-corporation conglomerate with multiple branches, secretly run by modern Knights Templar. The company is the present-day main antagonist of the franchise. Abstergo secretly created the "Animus", a device that allows its users to "re-live" and experience the memories of their genetic ancestors within their bloodline through a virtual simulation. Overexposure to the animus causes the "bleeding effect", which results in giving the user skills and abilities of his ancestors, but is also dangerous for the user as it can damage their mind, causing symptoms such as dementia, insanity, dissociative identity disorder or brain damage. Abstergo is seeking to discover the location of several historical artifacts, known as the "Pieces of Eden". Such artifacts hold great power, and are capable of controlling free will. Abstergo seeks to use them to remove free will and bring humanity into one single unified group, while the Assassins oppose them. In order to find the Pieces of Eden, Abstergo is abducting people whose ancestors are suspected to have had historically confirmed or suspected interactions with such devices, forcing the kidnapped person into the Animus and searching for clues on their ancestors' memories within the Animus.
+                </p>
+                <p class="article-content">
+                    While the games are often presented through protagonist Desmond Miles, the bulk of the game is played as Desmond experiences the memories of his ancestors through an advanced device called the Animus. This provides a means of a diegetic interface, showing Desmond's ancestor's health, equipment, goals, and other features as part of the Animus interface. The Animus is based on the player controlling the assassin to maintain the synchronization between Desmond and his ancestor's memories. Performing actions that go against the Assassin's way or dying breaks the synchronization, effectively requiring the player to restart at a previous checkpoint. Furthermore, the player cannot explore outside areas that the assassin has not experienced yet. There are also abnormalities within the Animus from previous users of the device.
+                </p>
+                <div class="project-img">
+                    <img src="images/project1.jpg" class="img-responsive">
+                    <p>In-game world vs. Real world</p>
+                </div>
+                <p class="article-content" style="padding-top: 20px">
+                    Connor eventually faces his father, whom offers a cease fire, as he is also after Benjamin Church for usurping his authority. They team up to investigate, Kenway warns Connor about the Patriots, seeking to remove Connor's people from their lands due to fear of an allegiance against the British. Connor eventually hunts and kills Lee, takes the medallion and ends the Templar threat. He is despondent to find his tribe's village abandoned save for the Piece of Eden; through it, Juno tells him to hide the amulet. Desmond wakes up on December 21, and with his allies finds the buried medallion, key to the inner Temple door, behind is a control sphere capable of stopping the solar flare. Juno appears and encourages Desmond to touch it, but Minerva appears and warns him not to, as it would release Juno as an entity that while would protect against the solar flare, would also be a threat to mankind's future. Juno says Minerva would rather have most of humanity wiped out, and Desmond survive to be a religious figure to lead the survivors, ultimately leading into conflict. Desmond opts to release Juno, believing humanity will have a better chance fighting Juno. The energy from the control sphere, protects Earth from the solar flare, but kills Desmond. Juno tells Desmond's corpse that his work is now done, and now it is time for her to work.
+                </p>
+            </div>
+        </div>
+        <!--bact to top button-->
+        <div class="container text-center">
+            <a href="#home"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
+        </div>
+        <div class="img-footer container"></div>
     </div>
-
-    <!--arrow scroll downwards-->
-    <div class="container text-center arrow-down collapse navbar-collapse">
-        <a href="#project"><span id="scroll-down" class="glyphicon glyphicon-chevron-down"></span></a>
-    </div>
-
-    <!--project-->
-    <div class="container" id="project" data-target="#navbar-scrollspy" data-offset="0">
-        <h1>The Past Is Your Playground</h1>
-        <h2 style="font-style: italic"><small>How Ubisoft Assassin's Creed Series Recreate Cultural Heritages in the Virtual World</small></h2>
-        <p class="article-content">
-            <br>Assassin's Creed is a franchise centered on an action-adventure video game series developed by Ubisoft. It depicts a centuries-old struggle pitting the Assassins, who fight for peace and free will, against the Templars, who believe peace comes through control of humanity. The series features historical fiction mixed with real-world historical events and figures. The series took inspiration from the novel Alamut by the Slovenian writer Vladimir Bartol, while building upon concepts from the Prince of Persia series.
-        </p>
-        <p class="article-content">
-            The franchise began in 2007 with the release of Assassin's Creed. The main video game series consists of ten entries, developed by Ubisoft Montreal (single-player) and Ubisoft Annecy (multiplayer), released on PlayStation 3, PlayStation 4, Xbox 360, Xbox One, Wii U, Microsoft Windows, and OS X platforms. Many spin-off games have been made for Nintendo DS, PlayStation Portable, PlayStation Vita, iOS, HP webOS, Android, Nokia Symbian and Windows Phone platforms. The handheld versions are developed by Gameloft and Gryptonite Studios, with additional development by Ubisoft Montreal.
-        </p>
-        <p class="article-content">
-            The series has been well received by critics, and has sold over 100 million copies as of September 2016, becoming Ubisoft's best selling franchise and one of the highest selling video game franchises of all time. The video game series has been expanded into a film, comics and novels; all of which take place within the same continuity as the main video games series.
-        </p>
-        <img src="images/project1.jpg" class="img-responsive">
-        <p class="article-content" style="padding-top: 20px">
-            Within the franchise, Abstergo Industries is a mega-corporation conglomerate with multiple branches, secretly run by modern Knights Templar. The company is the present-day main antagonist of the franchise. Abstergo secretly created the "Animus", a device that allows its users to "re-live" and experience the memories of their genetic ancestors within their bloodline through a virtual simulation. Overexposure to the animus causes the "bleeding effect", which results in giving the user skills and abilities of his ancestors, but is also dangerous for the user as it can damage their mind, causing symptoms such as dementia, insanity, dissociative identity disorder or brain damage. Abstergo is seeking to discover the location of several historical artifacts, known as the "Pieces of Eden". Such artifacts hold great power, and are capable of controlling free will. Abstergo seeks to use them to remove free will and bring humanity into one single unified group, while the Assassins oppose them. In order to find the Pieces of Eden, Abstergo is abducting people whose ancestors are suspected to have had historically confirmed or suspected interactions with such devices, forcing the kidnapped person into the Animus and searching for clues on their ancestors' memories within the Animus.
-        </p>
-        <p>
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-        </p>
-        <p>
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-        </p>
-        <p>
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-            Ecce, vox!Grandis habena virtualiter vitares eleates est.Nunquam desiderium itineris tramitem.A falsis, contencio castus stella.
-        </p>
-    </div>
-
-    <!--bact to top button-->
-    <div class="container text-center">
-        <a href="#home"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
-    </div>
-
     <script src="scripts/jquery-3.2.1.min.js"></script>
     <script src="scripts/bootstrap.min.js"></script>
     <script src="scripts/main.js"></script>

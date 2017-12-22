@@ -3,14 +3,14 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!--TO DO: meta name="keywords" content=""-->
+    <meta name="keywords" content="Assassin's Creed,Cultural Heritage,Paris,London,Florence,Cairo">
     <!--TO DO: meta name="description" content=""-->
     <link rel="stylesheet" href="styles/bootstrap.min.css">
     <link rel="stylesheet" href="styles/main.css">
-    <title>Cultural Heritage in Assassin's Creed Series</title>
+    <title>Florence: Assassin's Creed II Review</title>
 </head>
 <body data-spy="scroll">
-<!--navigation bar-->
+    <!--navigation bar-->
     <div class="navbar navbar-fixed-top navbar-default" role="navigation">
         <div class="container" id="navbar-container">
             <!--brand logo-->
@@ -21,7 +21,10 @@
                 <p class="greetings lead">Welcome, Guest!</p>
             </div>
             <!--navigation buttons-->
-            <div id="navbar-scrollspy" class="collapse navbar-collapse">
+            <!--menu button shows when collapsed-->
+            <label class="toggle-label visible-sm visible-xs" for="toggle-menu"><span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span></label>
+            <input class="toggle-menu hidden" onchange="showHide(this.checked)" id="toggle-menu" type="checkbox">
+            <div id="navbar-scrollspy" class="hidden-sm hidden-xs">
                 <ul class="nav navbar-nav navbar-right lead">
                     <li><a href="index.html">HOME</a></li>
                     <!--<li><a href="javascript:void(0)" onlick=locateAt('project')>PROJECT</a></li>-->
@@ -38,109 +41,120 @@
                             <li><a href="article4.html">Cairo</a></li>
                         </ul>
                     </li>
-                    <li><a href="#">ABOUT</a></li>
+                    <li><a href="about.html">ABOUT</a></li>
                 </ul>
             </div>
         </div>
     </div>
-
-<div class="container" style="padding-top: 90px;">
-    <div class="row"> <!--reduce horizontal margin by 15px-->
-        <!--main part on the left-->
-        <div class="col-md-8">
-            <h1 id="main" class="article-title">Florence the City of Lilies: Assassin's Creed II Review</h1>
-            <blockquote class="quotation">
-                And when I thought of Florence, it was like a miracle city embalmed and like a corolla, because it was called the city of lilies and its cathedral, St. Mary of the Flowers.<br><span>― Marcel Proust, Swann's Way</span>
-            </blockquote>
-            <img src="images/article3.png" class="img-responsive" alt="assassin's creed 2 santa maria del fiore">
-            <p class="article-content" style="padding-top: 20px">
-                <small>BY</small> <a href="http://uk.ign.com/articles/2009/11/17/assassins-creed-ii-review-2" target="_blank" style="font-weight:bold; color: #c83e43;">DAVID CLAYMAN</a> <span class="glyphicon glyphicon-arrow-right"></span> <a href="http://uk.ign.com/games/assassins-creed-ii/ps3-14302494">Assassin's Creed II</a> is the follow-up to Ubisoft's 2007 hit that attracted a mass audience if not unanimous critical acclaim. The sequel is an expansive and bloody romp through Renaissance Italy that plays up every popular aspect of the first installment while righting many of its flaws. Assassin's Creed II has evolved from an ill-defined action game into a fully featured open world experience. Everything from the new monetary system to the ability to buy armor and weapons makes it a richer, and ultimately more satisfying game than its predecessor.
-            </p>
-            <p class="article-content">
-                The plot of Assassin's Creed pulls together a bit of The Matrix, a lot of historical fiction, and throws in elements of the madcap conspiracy theories found in a Dan Brown novel. The series also has the benefit of being crafted by some of the most talented hands in game development. With only a handful of exceptions, the environments, animations, and art are beautifully portrayed. In addition to its good looks, the sequel's gameplay builds so much upon the foundations of the first game, that in retrospect, the first Assassin's Creed looks like little more than a technical demonstration.
-            </p>
-            <!--video clip-->
-            <div class="video-responsive">
-                <iframe src="https://www.youtube.com/embed/aljQV92icuQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+    <div class="container" id="to-be-hidden" style="padding-top: 90px;">
+        <div class="row"> <!--reduce horizontal margin by 15px-->
+            <!--main part on the left-->
+            <div class="col-md-8">
+                <h1 id="main" class="article-title">Florence the City of Lilies: Assassin's Creed II Review</h1>
+                <blockquote class="quotation">
+                    And when I thought of Florence, it was like a miracle city embalmed and like a corolla, because it was called the city of lilies and its cathedral, St. Mary of the Flowers.<br><span>― Marcel Proust, Swann's Way</span>
+                </blockquote>
+                <img src="images/article3.png" class="img-responsive" alt="assassin's creed 2 santa maria del fiore">
+                <p class="article-content" style="padding-top: 20px">
+                    <small>BY</small> <a href="http://uk.ign.com/articles/2009/11/17/assassins-creed-ii-review-2" target="_blank" style="font-weight:bold; color: #c83e43;">DAVID CLAYMAN</a> <span class="glyphicon glyphicon-arrow-right"></span> <a href="http://uk.ign.com/games/assassins-creed-ii/ps3-14302494">Assassin's Creed II</a> is the follow-up to Ubisoft's 2007 hit that attracted a mass audience if not unanimous critical acclaim. The sequel is an expansive and bloody romp through Renaissance Italy that plays up every popular aspect of the first installment while righting many of its flaws. Assassin's Creed II has evolved from an ill-defined action game into a fully featured open world experience. Everything from the new monetary system to the ability to buy armor and weapons makes it a richer, and ultimately more satisfying game than its predecessor.
+                </p>
+                <p class="article-content">
+                    The plot of Assassin's Creed pulls together a bit of The Matrix, a lot of historical fiction, and throws in elements of the madcap conspiracy theories found in a Dan Brown novel. The series also has the benefit of being crafted by some of the most talented hands in game development. With only a handful of exceptions, the environments, animations, and art are beautifully portrayed. In addition to its good looks, the sequel's gameplay builds so much upon the foundations of the first game, that in retrospect, the first Assassin's Creed looks like little more than a technical demonstration.
+                </p>
+                <!--video clip-->
+                <div class="video-responsive">
+                    <iframe src="https://www.youtube.com/embed/aljQV92icuQ" frameborder="0" gesture="media" allow="encrypted-media" allowfullscreen></iframe>
+                </div>
+                <p class="article-content" style="padding-top: 20px">
+                    Both fans and detractors of Assassin's Creed will be pleased to know that the sequel fully addresses and ties up many of the loose ends from the last game. It picks up exactly where we left off, with the kidnapped bartender Desmond locked in his cell at Abstergo. This corporation is the modern-day face of the Templars and they're after Desmond's valuable genetic memories. The magic of modern technology allows Desmond to relive the exploits of his Assassin ancestors. His genealogy puts him at the center of a war between the Templars and Assassins.
+                </p>
+                <p class="article-content">
+                    The game starts off with a bang, springing Desmond from jail and introducing him to the Assassins at their secret hideout. Here they have access to the same technology that allows Desmond to relive the past. In the last game, his brain was forcibly used to reveal powerful artifacts hidden in 12th century Jerusalem. This time Desmond temporally relocates to 15th century Italy by choice to learn the ways of the Assassins through the life of Ezio Audituerre de Firenze.
+                </p>
+                <img src="images/article31.jpg" class="img-responsive" alt="Trafalgar square in assassin's creed syndicate">
+                <p class="article-content" style="padding-top: 20px">
+                    It's a convoluted setup, but it's also a great excuse to skip around in time, taking control of a character for only the most interesting moments of his life. Players are introduced to Ezio at the moment of his birth as part of a clever lesson on movement. It then jumps to his formative years as a womanizer, a street fighter, and the son of a wealthy banker. He isn't a wholly likable character, but the game steers us towards a revenge plot that provides the player plenty of motivation to stick with the story. The Renaissance setting also adds a much needed dose of color and humor to the series.
+                </p>
+                <p class="article-content">
+                    As we learn more about Ezio and become acquainted with his hometown of Florence, the game presents bite-sized bits of information on how to play <a href="http://uk.ign.com/games/assassins-creed-ii/ps3-14302494">Assassin's Creed II</a>. This interweaving of plot and tutorial establishes an intriguing tale of revenge and slowly explains a varied and complicated control scheme.
+                </p>
+                <p class="article-content">
+                    In the early missions, we're introduced to the excellent free running system that allows players to climb over almost any surface. Movement speed in Assassin's Creed II has been significantly increased from the first game, enabling players to fluidly zip around the city. The animations are still excellent, and Ezio's body realistically adjusts to his environment as he climbs and vaults past obstacles. The only downside of free running is that there are moments when the camera doesn't present the best view of what's over the next rooftop. Overzealous free runners will take more damage from falling off buildings than they'll ever take from a sword.
+                </p>
             </div>
-            <p class="article-content" style="padding-top: 20px">
-                Both fans and detractors of Assassin's Creed will be pleased to know that the sequel fully addresses and ties up many of the loose ends from the last game. It picks up exactly where we left off, with the kidnapped bartender Desmond locked in his cell at Abstergo. This corporation is the modern-day face of the Templars and they're after Desmond's valuable genetic memories. The magic of modern technology allows Desmond to relive the exploits of his Assassin ancestors. His genealogy puts him at the center of a war between the Templars and Assassins.
-            </p>
-            <p class="article-content">
-                The game starts off with a bang, springing Desmond from jail and introducing him to the Assassins at their secret hideout. Here they have access to the same technology that allows Desmond to relive the past. In the last game, his brain was forcibly used to reveal powerful artifacts hidden in 12th century Jerusalem. This time Desmond temporally relocates to 15th century Italy by choice to learn the ways of the Assassins through the life of Ezio Audituerre de Firenze.
-            </p>
-            <img src="images/article31.jpg" class="img-responsive" alt="Trafalgar square in assassin's creed syndicate">
-            <p class="article-content" style="padding-top: 20px">
-                It's a convoluted setup, but it's also a great excuse to skip around in time, taking control of a character for only the most interesting moments of his life. Players are introduced to Ezio at the moment of his birth as part of a clever lesson on movement. It then jumps to his formative years as a womanizer, a street fighter, and the son of a wealthy banker. He isn't a wholly likable character, but the game steers us towards a revenge plot that provides the player plenty of motivation to stick with the story. The Renaissance setting also adds a much needed dose of color and humor to the series.
-            </p>
-            <p class="article-content">
-                As we learn more about Ezio and become acquainted with his hometown of Florence, the game presents bite-sized bits of information on how to play <a href="http://uk.ign.com/games/assassins-creed-ii/ps3-14302494">Assassin's Creed II</a>. This interweaving of plot and tutorial establishes an intriguing tale of revenge and slowly explains a varied and complicated control scheme.
-            </p>
-            <p class="article-content">
-                In the early missions, we're introduced to the excellent free running system that allows players to climb over almost any surface. Movement speed in Assassin's Creed II has been significantly increased from the first game, enabling players to fluidly zip around the city. The animations are still excellent, and Ezio's body realistically adjusts to his environment as he climbs and vaults past obstacles. The only downside of free running is that there are moments when the camera doesn't present the best view of what's over the next rooftop. Overzealous free runners will take more damage from falling off buildings than they'll ever take from a sword.
-            </p>
+
+            <!--secondary part on the right-->
+            <div class="col-md-4">
+                <!--search-->
+                <div class="search input-group">
+                    <input type="text" class="form-control" placeholder="Search for...">
+                    <span class="input-group-btn">
+                        <button class="btn btn-default" type="button">
+                            <span class="glyphicon glyphicon-search"></span>
+                        </button>
+                    </span>
+                </div>
+                <!--side bar-->
+                <div class="side-bar">
+                    <div class="side-bar-title">You May Also Like...</div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="article1.html" target="_blank"><img src="images/article1.jpg" class="img-responsive" alt="notre dame de paris"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="article1.html" target="_blank" style="color: #777777;">Paris: The City of Eternity</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="article2.html" target="_blank"><img src="images/sideBarLondon.jpg" class="img-responsive" alt="london in victorian times bovril vinolia"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="article2.html" target="_blank" style="color: #777777;">Discover London in Victorian Times</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="article4.html" target="_blank"><img src="images/sideBarCairo.jpg" class="img-responsive" alt="assassin's creed origins pharaoh"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="article4.html" target="_blank" style="color: #777777;">Reveal deepest mysteries of the Pharaohs</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="index.html#project" target="_blank"><img src="images/sideBarBottom.jpg" class="img-responsive" alt="assassin's creed project"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="index.html#project" target="_blank" style="color: #777777;">Assassin's Creed project overview</a>
+                        </div>
+                    </div>
+                    <div class="side-bar-item clearfix">
+                        <div class="col-xs-5">
+                            <a href="about.html" target="_blank"><img src="images/sideBarAbout.jpg" class="img-responsive" alt="assassin's creed about us"></a>
+                        </div>
+                        <div class="col-xs-7">
+                            <a href="about.html" target="_blank" style="color: #777777;">About Us...</a>
+                        </div>
+                    </div>
+                </div>
+                <!--Google street view-->
+                <div class="street-view">
+                    <iframe src="https://www.google.com/maps/embed?pb=!4v1513707209628!6m8!1m7!1s8QjMHlS7u4punIDCChKcww!2m2!1d43.77339599617742!2d11.25522977999266!3f119.05356635171087!4f28.658346120185428!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
+                </div>
+                <!--ubisoft-->
+                <div class="ubi-logo">
+                    <a href="https://www.ubisoft.com/en-US/" target="_blank"><img class="img-responsive" src="images/ubisoft.png"></a>
+                </div>
+            </div>
         </div>
-
-        <!--secondary part on the right-->
-        <div class="col-md-4">
-            <!--side bar-->
-            <div class="side-bar">
-                <div class="side-bar-title">You May Also Like...</div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="article1.html" target="_blank"><img src="images/article1.jpg" class="img-responsive" alt="notre dame de paris"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="article1.html" target="_blank" style="color: #777777;">Paris: The City of Eternity</a>
-                    </div>
-                </div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="article2.html" target="_blank"><img src="images/sideBarLondon.jpg" class="img-responsive" alt="london in victorian times bovril vinolia"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="article2.html" target="_blank" style="color: #777777;">Discover London in Victorian Times</a>
-                    </div>
-                </div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="article3.html" target="_blank"><img src="images/sideBarFlorence.jpg" class="img-responsive" alt="florence Ponte Vecchio"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="article3.html" target="_blank" style="color: #777777;">Florence, The Gallery of Renaissance</a>
-                    </div>
-                </div>
-                <div class="side-bar-item clearfix">
-                    <div class="col-xs-6">
-                        <a href="index.html#project" target="_blank"><img src="images/sideBarBottom.jpg" class="img-responsive" alt="assassin's creed project"></a>
-                    </div>
-                    <div class="col-xs-6">
-                        <a href="index.html#project" target="_blank" style="color: #777777;">Assassin's Creed project overview</a>
-                    </div>
-                </div>
-            </div>
-            <!--Google street view-->
-            <div class="street-view">
-                <iframe src="https://www.google.com/maps/embed?pb=!4v1513707209628!6m8!1m7!1s8QjMHlS7u4punIDCChKcww!2m2!1d43.77339599617742!2d11.25522977999266!3f119.05356635171087!4f28.658346120185428!5f0.7820865974627469" frameborder="0" style="border:0" allowfullscreen></iframe>
-            </div>
-            <!--ubisoft-->
-            <div class="ubi-logo">
-                <a href="https://www.ubisoft.com/en-US/"><img class="img-responsive" src="images/ubisoft.png"></a>
-            </div>
-
+        <!--bact to top button-->
+        <div class="container text-center">
+            <a href="#main"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
         </div>
     </div>
-</div>
-
-
-<!--bact to top button-->
-<div class="container text-center">
-    <a href="#main"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
-</div>
-
-<script src="scripts/jquery-3.2.1.min.js"></script>
-<script src="scripts/bootstrap.min.js"></script>
-<script src="scripts/theia-sticky-sidebar.js"></script>
-<script src="scripts/main.js"></script>
+    <script src="scripts/jquery-3.2.1.min.js"></script>
+    <script src="scripts/bootstrap.min.js"></script>
+    <script src="scripts/main.js"></script>
 </body>
 </html>

@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="keywords" content="Assassin's Creed,Cultural Heritage,Paris,London,Florence,Cairo">
+    <!--TO DO: meta name="description" content=""-->
+    <link rel="stylesheet" href="styles/bootstrap.min.css">
+    <link rel="stylesheet" href="styles/main.css">
+    <title>About Us</title>
+</head>
+<body data-spy="scroll">
+    <!--navigation bar-->
+    <div class="navbar navbar-fixed-top navbar-default" role="navigation">
+        <div class="container" id="navbar-container">
+            <!--brand logo-->
+            <div class="navbar-header">
+                <a href="index.html" class="navbar-brand"></a>
+            </div>
+            <div class="collapse navbar-collapse navbar-text clearfix">
+                <p class="greetings lead">Welcome, Guest!</p>
+            </div>
+            <!--navigation buttons-->
+            <!--menu button shows when collapsed-->
+            <label class="toggle-label visible-sm visible-xs" for="toggle-menu"><span id="menu-button" class="glyphicon glyphicon-menu-hamburger"></span></label>
+            <input class="toggle-menu hidden" onchange="showHide(this.checked)" id="toggle-menu" type="checkbox">
+            <div id="navbar-scrollspy" class="hidden-sm hidden-xs">
+                <ul class="nav navbar-nav navbar-right lead">
+                    <li><a href="index.html">HOME</a></li>
+                    <!--<li><a href="javascript:void(0)" onlick=locateAt('project')>PROJECT</a></li>-->
+                    <li><a href="index.html#project">PROJECT</a></li>
+                    <!--dropdown menu-->
+                    <li role="presentation" class="dropdown">
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" id="drop-down-menu" aria-haspopup="true" aria-expanded="false" role="button">
+                            CITIES<span class="caret"></span>
+                        </a>
+                        <ul class="dropdown-menu" aria-labelledby="drop-down-menu">
+                            <li><a href="article1.html">Paris</a></li>
+                            <li><a href="article2.html">London</a></li>
+                            <li><a href="article3.html">Florence</a></li>
+                            <li><a href="article4.html">Cairo</a></li>
+                        </ul>
+                    </li>
+                    <li class="active"><a href="#">ABOUT</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!--main part-->
+    <div class="container to-be-hidden about-us">
+        <h1 id="about">About Us...</h1>
+        <div class="web-maker clearfix">
+            <div class="col-xs-4">
+                <img src="images/about1.png" class="about-img img-responsive" alt="webmaster's photo">
+            </div>
+            <div class="col-xs-8">
+                <div class="about-content">
+                    <h3>Sir Bla Blabla, Webmaster</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.                    </p>
+                    <b>Email:</b> <a href="mailto:blabla.bla@kcl.ac.uk">blabla.bla@kcl.ac.uk</a>
+                </div>
+            </div>
+        </div>
+        <div class="web-maker clearfix">
+            <div class="col-xs-4">
+                <img src="images/about2.png" class="about-img img-responsive" alt="programmer's photo">
+            </div>
+            <div class="col-xs-8">
+                <div class="about-content">
+                    <h3>Sir Bla Blabla, Programmer</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.                    </p>
+                    <b>Email:</b> <a href="mailto:blabla.bla@kcl.ac.uk">blabla.bla@kcl.ac.uk</a>
+                </div>
+            </div>
+        </div>
+        <div class="web-maker clearfix">
+            <div class="col-xs-4">
+                <img src="images/about3.png" class="about-img img-responsive" alt="designer's photo">
+            </div>
+            <div class="col-xs-8">
+                <div class="about-content">
+                    <h3>Sir Bla Blabla, Designer</h3>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.                    </p>
+                    <b>Email:</b> <a href="mailto:blabla.bla@kcl.ac.uk">blabla.bla@kcl.ac.uk</a>
+                </div>
+            </div>
+        </div>
+        <img src="images/aboutAcr.jpg" class="separator img-responsive" style="margin-top: 10%;">
+    </div>
+
+    <!--contact form-->
+    <div class="contact">
+
+        <form class="form-group">
+            <p style="font-size: 25px;font-weight: 700;">GET IN TOUCH:</p>
+            <input type="text" name="Name" class="form-control contact-item" id="contact-info1" placeholder="Name" aria-label="Name">
+            <input type="text" name="Email" class="form-control contact-item" id="contact-info2" placeholder="Email" aria-label="Email">
+            <input type="text" name="Subject" class="form-control contact-item" id="contact-info3" placeholder="Subject" aria-label="Subject">
+            <textarea name="Message" id="contact-info4" class="form-control contact-item" placeholder="Message" aria-label="Message"></textarea>
+            <div style="text-align: right;"><button type="submit" class="btn btn-default btn-contact btn-lg">Send</button></div>
+        </form>
+    </div>
+    <!--bact to top button-->
+    <div class="container text-center">
+        <a href="#about"><button class="btn btn-default btn-lg" id="back-to-top">Back To Top</button></a>
+    </div>
+
+<script src="scripts/jquery-3.2.1.min.js"></script>
+<script src="scripts/bootstrap.min.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>
