@@ -44,7 +44,7 @@ ul.navbar-right li {
 .greetings {
     padding-top: 11px;
     padding-left: 50px;
-    color: brown;
+    color: #c1232c;
 }
 
 div.for-carousel {
@@ -80,12 +80,13 @@ div.for-carousel {
     width: 80%;
     margin: 0 auto;
 }
-.project-img p {
+.project-img p, .article-img {
     text-align: center;
     font-size: 20px;
     opacity: 0.5;
     margin-top: 10px;
 }
+
 .main-content {
     width: 95%;
     margin: 0 auto;
@@ -101,8 +102,8 @@ div.for-carousel {
     margin-bottom: 5%;
 }
 #back-to-top {
-    border-color: #a52a2a;
-    color: #a52a2a;
+    border-color: #c1232c;
+    color: #c1232c;
     margin-top: 5vmin;
     margin-bottom: 10vmin;
 }
@@ -112,7 +113,6 @@ ul.dropdown-menu > li > a {
     font-family: sans-serif;
     font-size: 18px;
     font-weight: 300;
-
 }
 
 .article-title {
@@ -122,7 +122,7 @@ ul.dropdown-menu > li > a {
     margin-top: -90px;
 }
 .article-subtitle {
-    color: #c22b33;
+    color: #c1232c;
     font-size: 25px;
 }
 
@@ -130,6 +130,7 @@ blockquote > span {
     display: inline-block;
     margin-left: 20px;
     font-weight: bold;
+    color: #c1232c;
 }
 
 .quotation {
@@ -180,7 +181,7 @@ blockquote > span {
     padding-bottom: 10px;
     padding-left: 15px;
     font-size: 23px;
-    color: #555555;
+    color: #c1232c;
 }
 
 .side-bar-item {
